@@ -1,0 +1,26 @@
+
+# Orchestration & Intelligence
+# NOTE: CrewAI requires Python >=3.10,<3.14. If using Python 3.14, you need Python 3.13 or lower
+# crewai-tools is deprecated - use crewai[tools] instead which includes all tools
+crewai[tools]>=1.7.0
+openai~=1.83.0  # CrewAI requires this specific version
+langchain-openai>=1.0.0  # For LLM integration with CrewAI
+google-cloud-aiplatform>=1.0.0
+
+# Data & Scraping
+apify-client>=1.0.0
+mcp[cli]>=0.1.0
+
+# Validation & Data Quality (Hackathon Partners)
+# relationalai>=0.1.0  # For Rilo integration (has Python 3.13 compatibility issues with ed25519 dependency)
+kalibr>=0.1.0        # For Kalibr integration (observability for agentic workflows)
+pycalib>=0.0.9.dev9  # For classifier calibration and scoring (only dev versions available)
+# proxlock-sdk>=0.1.0  # For Proxlock digital locking (not available on PyPI - install from GitHub if needed)
+
+# Monetization & Payments
+unmeshed-sdk>=1.2.9  # Nevermined's Agent-to-Agent Python SDK (latest: 1.2.9)
+python-dotenv>=1.0.0
+
+# Web Framework (For the Dashboard)
+fastapi>=0.104.0
+uvicorn[standard]>=0.24.0
